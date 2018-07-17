@@ -27,7 +27,8 @@ import java.io.IOException;
 @ComponentScan(basePackages = {"com.amazonaws.labs.sampleapp"})
 @Configuration
 public class MvcConfiguration extends WebMvcConfigurerAdapter {
-    private static Region region = Regions.getCurrentRegion();
+    // private static Region region = Regions.getCurrentRegion();
+    private static Region region = Region.getRegion(Regions.EU_WEST_2);
 
     @Override
     public void addResourceHandlers(final ResourceHandlerRegistry registry) {
