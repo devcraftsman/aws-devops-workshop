@@ -28,7 +28,7 @@ import java.io.IOException;
 @Configuration
 public class MvcConfiguration extends WebMvcConfigurerAdapter {
     // private static Region region = Regions.getCurrentRegion();
-    private static Region region = Region.getRegion(Regions.fromName("eu-west-2"));
+    private static Region region = Region.getRegion(Regions.fromName("EU_WEST_2"));
 
     @Override
     public void addResourceHandlers(final ResourceHandlerRegistry registry) {
